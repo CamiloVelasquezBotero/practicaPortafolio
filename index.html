@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es"> <!--se le agrega el indexado de idioma español-->
+<head>
+	<meta charset="utf-8"> <!--Para que identifique caracteres del idioma español como la ñ-->
+	<meta name="viewport" content="width=device-width, user-scalable=no,
+	initial-scale=1 maximun-scale=1.0, minimum-scale=1.0"> <!--Necesario para el Responsive Design-->
+	<title>Portafolio de Camilo</title> <!--Titulo de la pagina-->
+	<link rel="stylesheet" href="https:///fonts.googleapis.com/css?family=Open+Sans:300,400,600i,700">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"> <!--Estilos que le damos con css-->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"> <!--Se enlaza con el normalize.css-->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"> <!--Se enlaza con el font.awesome (Para los iconos del footer)-->
+</head>
+<body>
+	<header>
+		<div class="contenedor"> <!--Se crea la el contenedor padre-->
+			<nav class="menu"> <!--Se crea el contenedor menu con etiqueta de navegacion-->
+				<a href="#">Acerca de</a> <!--Se crean los elementos del menu-->
+				<a href="#">Trabajos</a>
+				<a href="#">Contacto</a>
+			</nav>
+
+			<div class="contenedor-texto"> <!--Se crea el contenedor padre del texto-->
+				<div class="texto">	<!--Se crea el contenedor hijo texto-->
+					<h1 class="nombre">Camilo Velasquez</h1> <!--Se crea el titulo del header-->
+					<h2 class="profesion">Desarrollador web</h2> <!--Se crea la descripcion-->
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="main"> <!--Se crea la section main-->
+		<section class="acerca-de"> <!--Se crea la seccion padre (Acerca de)-->
+			<div class="contenedor"> <!--Se crea el contenedor del (Acerca de)-->
+				<div class="foto"> <!--Se crea el contenedor de la foto-->
+					<img src="imagenes/foto.jpg" width="115" height="115" alt="Camilo Velasquez Botero"> <!--Se ingresa la foto-->
+				</div>
+
+				<div class="texto"> <!--Se crea el contenedor del texto del contenedor padre (Acerca de)-->
+					<h3 class="titulo">Acerca de</h3> <!--Se le da el titulo -->
+					<p>Apasionado por el mundo de la <span class="bold">Ciberseguridad</span> especialmente enfocado al <span class="bold">Pentesting</span> del lado del <span class="bold">Red Team.
+					</span><br><span class="bold">Programador</span> <span class="bold">Back-end</span> y <span class="bold">Front-End</span></p> <!--Se crea la descripcion-->
+				</div>
+			</div>
+		</section>
+
+		<section class="trabajos"> <!--Se crea la el contenedor padre para los (Trabajos)-->
+			<div class="contenedor"> <!--Se crea el contenedor hijo del contenedor (Trabajos)-->
+				<h3 class="titulo">Trabajos</h3> <!--Se crea el titulo del contenedor-->
+				<div class="contenedor-trabajos"> <!--Se crea un contenedor para los trabajos-->
+					<div class="trabajo"> <!--Se crea un trabajo-->
+						<div class="thumb">
+							<img src="imagenes/trabajos/1.jpg" alt="Descripcion del trabajo">
+						</div>
+						<div class="descripcion">
+							<p class="nombre">Nombre Trabajo</p>
+							<p class="categoria">HTML - CSS - PHP</p>
+						</div>
+					</div>
+					<div class="trabajo"> <!--Se crea otr trabajo-->
+						<div class="thumb">
+							<img src="imagenes/trabajos/2.jpg" alt="Descripcion del trabajo">
+						</div>
+						<div class="descripcion">
+							<p class="nombre">Nombre Trabajo</p>
+							<p class="categoria">HTML - CSS - PHP</p>
+						</div>
+					</div>
+					<div class="trabajo"> <!--Se crea otr trabajo-->
+						<div class="thumb">
+							<img src="imagenes/trabajos/3.jpg" alt="Descripcion del trabajo">
+						</div>
+						<div class="descripcion">
+							<p class="nombre">Nombre Trabajo</p>
+							<p class="categoria">HTML - CSS - PHP</p>
+						</div>
+					</div>
+					<div class="trabajo"> <!--Se crea otro trabajo-->
+						<div class="thumb">
+							<img src="imagenes/trabajos/4.jpg" alt="Descripcion del trabajo">
+						</div>
+						<div class="descripcion">
+							<p class="nombre">Nombre Trabajo</p>
+							<p class="categoria">HTML - CSS - PHP</p>
+						</div>
+					</div>
+					<div class="trabajo"> <!--Se crea otro trabajo-->
+						<div class="thumb">
+							<img src="imagenes/trabajos/5.jpg" alt="Descripcion del trabajo">
+						</div>
+						<div class="descripcion">
+							<p class="nombre">Nombre Trabajo</p>
+							<p class="categoria">HTML - CSS - PHP</p>
+						</div>
+					</div>
+					<div class="trabajo"> <!--Se crea otro trabajo-->
+						<div class="thumb">
+							<img src="imagenes/trabajos/6.jpg" alt="Descripcion del trabajo">
+						</div>
+						<div class="descripcion">
+							<p class="nombre">Nombre Trabajo</p>
+							<p class="categoria">HTML - CSS - PHP</p>
+						</div>
+					</div>
+					<div class="trabajo"> <!--Se crea otro trabajo-->
+						<div class="thumb">
+							<img src="imagenes/trabajos/7.jpg" alt="Descripcion del trabajo">
+						</div>
+						<div class="descripcion">
+							<p class="nombre">Nombre Trabajo</p>
+							<p class="categoria">HTML - CSS - PHP</p>
+						</div>
+					</div>
+					<div class="trabajo"> <!--Se crea otro trabajo-->
+						<div class="thumb">
+							<img src="imagenes/trabajos/8.jpg" alt="Descripcion del trabajo">
+						</div>
+						<div class="descripcion">
+							<p class="nombre">Nombre Trabajo</p>
+							<p class="categoria">HTML - CSS - PHP</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+
+	<footer> <!--Se crea el footer-->
+		<section class="contacto"> <!--Se crea el contenedor padre para la section contacto-->
+			<div class="contenedor"> <!--Se crea el contenedor-->
+				<h3 class="titulo">Contacto</h3> <!--Se le da el titulo-->
+				<form class="formulario" name="formulario-contacto" netlify> <!--Se crea el formulario para el contacto-->
+					<input type="text" placeholder="Nombre" name="nombre" required> <!--Se crea la caja para ingresar el Nombre-->
+					<input type="email" placeholder="Correo" name="correo" required> <!--Se crea la caja para ingresar su correo-->
+					<textarea name="mensaje" placeholder="mensaje"></textarea> <!--Se crea el area del texto para el mensaje-->
+					<input class="boton" type="submit" value="Enviar"> <!--Se crea el boton para enviar la informacion ingresada-->
+				</form>
+			</div>
+		</section>
+
+		<section class="redes-sociales"> <!--Se crea el contenedor padre de la section Redes Sociales-->
+			<div class="contenedor"> <!--Se crea el contenedor-->
+				<a href="#" class="twitter"><i class="fa fa-twitter"></i></a> <!--Se crea el enlace con icono de la red social-->
+				<a href="#" class="facebook"><i class="fa fa-facebook-square"></i></a>
+				<a href="#" class="youtube"><i class="fa fa-youtube-play"></i></a>
+				<a href="#" class="github"><i class="fa fa-github"></i></a>
+				<a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+			</div>
+		</section>
+	</footer>
+</body>
+</html>

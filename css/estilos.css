@@ -1,0 +1,255 @@
+* { /*Selecciono todo el contenido de la pagina*/
+	box-sizing: border-box; /*Quiero que todos los bordes se compilen en uno solo para que no se separen lso elementos*/
+}
+body { /*Selecciono el body de la pagina*/
+	background: #fff; /*Quieroq ue el fondo tenga un color...*/
+	font-family: "Open Sans"; /*Selecciono la fuente que le di con el <link> en html de GoogleFonts*/
+	font-size: 16px; /*Quiero que la fuente tenga un tamaño de...*/
+}
+.contenedor { /*Selecciono el todos los objetos con la clase contenedor*/
+	width: 90%; /*El otro 10% se utilizara para margenes*/
+	max-width: 1000px; /*Que tengan un ancho maximo de...*/
+	margin: auto; /*Tengan un amrgen automatico (Se centra automaticamente)*/
+	overflow: hidden; /*Que todos los elementos sobrantes se oculten*/
+}
+
+/************HEADER**********/
+header { /*Selecciono el header*/
+	background: url('../imagenes/bg.jpg') #49a3d6; /*Coloco la imagen de fondo, y le dijo que los espacios que falten, los rellene con el color...*/
+	background-repeat: no-repeat; /*No quiero que se repita la imagen de fondo*/
+	background-position: center; /*Quiero que la imagen de fondo se posicione en el centro*/
+	max-height: 600px; /*Quiero que la altura maxima del fondo sea de...*/
+}
+header .menu { /*Selecciono la clase menu dle header*/
+	margin: 40px 0; /*Le doy un margen de 40px arriba y abajo  0 a los lados*/
+	text-align: right; /*Alineo los elementos del menu a la derecha*/
+}
+header .menu a { /*Selecciono cada enlace de mi contenedor menu*/
+	margin: 0 20px; /*Les doy un margen de 0 arriba y abajo y 20 a los lados*/
+	color: #fff; /*Quiero que tengan un color...*/
+	padding-bottom: 9px; /*Quiero que cada uno tenga un margen abajo de...*/
+	display: inline-block; /*Los convierto en inline-block, para que tengan las propiedades de ambos*/
+	text-decoration: none; /*No quiero que tengan decoracion por default*/
+	border-bottom: 2px solid transparent; /*Les coloco un borde abajo pero invisible para luego hacerlo aparecer con (hover)*/
+	font-size: 1em; /*Quiero que tengan un tamaño de (1em), que significa el font-size del body*/
+}
+header .menu a:hover { /*Quiero que cuando se pase el cursor por encima de mi menu ...*/
+	border-bottom: 2px solid #fff; /*Quiero que parezca el borde que esta invisible ...*/
+}
+header .contenedor-texto { /*Selecciono el contenedor del texto*/
+	display: flex; /*Habilito que sea flexible (Flexbox)*/
+	justify-content: center; /*Quiero justiticar el contenido en el centro*/
+	align-content: center; /*Quiero alinear el contenido en el centro*/
+	margin: 190px 0; /*Quiero darle un margen de 190 arriba y abajo y 0 a los lados*/
+}
+header .contenedor-texto .texto { /*Selecciono la clase texto del contenedor del texto*/
+	border: 2px solid rgba(255, 255, 255, 0.5); /*Le doy un borde de color... con una transparencia de (0.5)*/
+	border-radius: 3px; /*Le doy un radio de borde de...*/
+	display: inline-block; /*Lo convierto en inline-bloc*/
+	text-align: center; /*Alineo el texto en el centro*/
+	padding: 50px 60px; /*Le doy un padding de 50 arriba y abajo y 60 a los lados*/
+}
+header .contenedor-texto .texto h1, /*Selecciono abmbos h1 y h2*/
+header .contenedor-texto .texto h2 {
+	color: #fff; /*Quiero que ambos tengan un color de...*/
+	font-weight: 300; /*Quieroq eu tengan un grosor de 300, que elige con el <link> de GoogleFonts*/
+	margin: 0; /*Les doy un margen de 0*/
+}
+header .contenedor-texto .texto .nombre { /*Accedo a la clase nombre del contenedor del texto*/
+	margin-bottom: 10px; /*Le doy un margen abajo de..*/
+	font-size: 50px; /*Le doy un tamaño de fuente de..*/
+	line-height: 50px; /*Le doy un separado de linea de ...*/
+}
+header .contenedor-texto .texto .profesion { /*Accedo a la clase profesion del contenedor del texto*/
+	font-size: 25px; /*Le doy un tamaño de fuente de..*/
+	line-height: 25px; /*Le doy un separado de linea de ...*/
+}
+
+/**********MAIN**************/
+.main .contenedor { /*Accedor al contenedor del main*/
+	overflow: visible; /*hago visible el contenedor, para que asi se pueda ver la imagen, ya que en el header, habiamos ocultado los elementros sobrantes*/
+}
+.main .acerca-de { /*Accedo al contenedor acerca-de  del contenedor main*/
+	text-align: center; /*Quiero que el texto se alinee al centro*/
+}
+.main .acerca-de .foto { /*Accedo al contenedor de la foto de mi contenedor acerca-de*/
+	margin-top: -60px; /*Le doy un margen arriba de -60 para retrocederlo y ase ponerlo a la mitad*/
+}
+.main .acerca-de .foto img { /*Accedo a mi imagen */
+	vertical-align: top; /*Lo alineo verticalmente con la referencia de top*/
+	border-radius: 50%; /*Le doy un radio de borde del 50% ya que es cuadrada, para volverla redonda*/
+	border: 5px solid rgba(255, 255, 255, 0.2); /*Le doy un borde externo de ... con una transparencia de 0.2*/
+}
+.main .acerca-de .texto { /*Accedo a mi clase texto de mi contenedor acerca-de*/
+	color: #5a5a5a; /*Le doy un color ...*/
+	font-weight: 600; /*Le doy un grosor de...*/
+	font-size: 1em; /*Le doy un tamaño de fuente de...*/
+	line-height: 30px; /*Le doy un separado de linea de...*/
+	width: 80%; /*Le doy un ancho de...*/
+	margin: 40px auto 60px auto; /*Le doy un margen arriba, derecha, abajo, izquierda*/
+}
+.main .acerca-de .texto .titulo { /*Accedo a mi titulo del contenedor texto*/
+	font-size: 34px; /*Le doy un tamaño de fuente de 34px*/
+	line-height: 34px; /*Le doy un separado de linea al texto de...*/
+	margin-bottom: 40px; /*Le doy un margen abajo de...*/
+	font-weight: 300; /*Le doy un grosor de fuente de 300, añadido por GoogleFonts en html*/
+	color: #dd820d; /*Le doy un color de fuente de...*/
+	text-align: center; /*Alineo el texto en el centro*/
+}
+.main .acerca-de .texto .bold { /*Selecciono mi clase bold en el texto*/
+	color: #3895ea; /*Le doy un color...*/
+	text-decoration: underline; /*Quiero que tengan una decoracion de texto (subrayado)*/
+}
+
+/****************** Main Trabjos **************/
+.main .trabajos {
+	background: #f2f2f2; /*Le doy un fondo a mi contenedor trabajos*/
+	padding: 60px 0;
+}
+.main .trabajos .contenedor { /*le doy un overflowhidden por si en dado caso algun elemento sobresale*/
+	overflow: hidden;
+}
+.main .trabajos .titulo {
+	font-size: 34px; /*Le doy un tamaño de fuente de 34px*/
+	line-height: 34px; /*Le doy un separado de linea al texto de...*/
+	margin-bottom: 40px; /*Le doy un margen abajo de...*/
+	font-weight: 300; /*Le doy un grosor de fuente de 300, añadido por GoogleFonts en html*/
+	color: #323068; /*Le doy un color de fuente de...*/
+	text-align: center; /*Alineo el texto en el centro*/
+}
+.main .trabajos .contenedor-trabajos { /*Accedo a mi contenedor trabajos*/
+	display: flex; /*Habilito la flexibilidad (Flexbox)*/
+	flex-direction: row; /*Alineamos los elementos en linea*/
+	flex-wrap: wrap; /*Los elementos que no quepan, que se organicen abajo*/
+	justify-content: space-between; /*Divido el espacio entre los elementos de mi contenedor*/
+}
+.main .trabajos .contenedor-trabajos .trabajo { /*Accedo a cada trabajo*/
+	width: 23%;
+	margin-bottom: 40px;
+}
+.main .trabajos .contenedor-trabajos .trabajo .thumb { /*Accedo a la caja de cada imagen*/
+	width: 100%;
+	margin-bottom: 10px;
+}
+.main .trabajos .contenedor-trabajos .trabajo .thumb img{ /*le doy un ancho, alineo y le doy un radio de borde a cada imagen*/
+	width: 100%; /*Le doy n ancho respecto a su contenedor padre*/
+	vertical-align: top;
+	border-radius: 3px;
+}
+.main .trabajos .contenedor-trabajos .trabajo .descripcion { /*Ingreso a la descripcion de cada trabajo*/
+	text-align: center;
+}
+.main .trabajos .contenedor-trabajos .trabajo .descripcion .nombre { /*Ingreso al nombre de cada trabajo*/
+	font-weight: 700; /*grosor de la fuente segun el GoogleFont que agregamos en html */
+	color: #3895ea;
+	margin-bottom: 10px;
+}
+.main .trabajos .contenedor-trabajos .trabajo .descripcion .categoria { /*Ingreso a cada categoria decada trabajo*/
+	font-size: 14px;
+	color: #636363;
+}
+
+/************** Footer ************/
+footer .contacto{
+	padding: 60px 0;
+}
+footer .contacto .titulo {
+	font-size: 34px; /*Le doy un tamaño de fuente de 34px*/
+	line-height: 34px; /*Le doy un separado de linea al texto de...*/
+	margin-bottom: 40px; /*Le doy un margen abajo de...*/
+	font-weight: 300; /*Le doy un grosor de fuente de 300, añadido por GoogleFonts en html*/
+	color: #3895ea; /*Le doy un color de fuente de...*/
+	text-align: center; /*Alineo el texto en el centro*/
+}
+footer .contacto .formulario { /*Accedo a mi clase formmulario*/
+	display: flex; /*Habilito que sea flexible (Flexbox)*/
+	flex-wrap: wrap; /*Quiero que si no cabe el elemento siguiente se organice debajo y respete los tamaños de los otros*/
+	justify-content: space-between; /*Quiero que el espacio se divida entre los elementos*/
+}
+footer .contacto .formulario input[type="text"], /*Elijo multiples clases del formulario*/
+footer .contacto .formulario input[type="email"],
+footer .contacto .formulario textarea {
+	border: 2px solid #cecece; /*Les doy un borde ...*/
+	border-radius: 5px; /*Les doy un radio de borde...*/
+	padding: 15px 20px; /*Les doy un padding...*/
+	font-size: 20px; /*Les doy un tamaño de fuente...*/
+	color: #a4a4a4; /*Le doy un color a la funete...*/
+}
+footer .contacto .formulario input[type="text"], /*Seleccino mi input de tipo texto y de tipo email*/
+footer .contacto .formulario input[type="email"] {
+	width: 49%; /*Les doy un ancho de 49%*/
+	margin-bottom: 15px; /*Les doy un margen abajo de...*/
+}
+footer .contacto .formulario textarea { /*Selecciono mi etiqueta textarea*/
+	width: 100%; /*Le doy un ancho*/
+	height: 100px; /*Le doy un alto*/
+	min-width: 100%;/*Le establezco el ancho minimo*/
+	max-width: 100%; /*Le establezco el ancho maximo*/
+	min-height: 100px; /*Le establezco la altura minima*/
+	max-height: 300px; /*Le establezco la altura maxima*/
+	margin-bottom: 15px; /*Le establezco un margen abajo de...*/
+}
+footer .contacto .formulario .boton { /*Accedo a mi clase boton*/
+	margin: auto; /*Le doy un margen auto para alinearlo en el centro*/
+	background: #3895ea; /*Le doy un fondo */
+	color: #fff; /*L e doy un color a la funete*/
+	border: none; /*Le quieto el borde*/
+	border-radius: 3px; /*Le doy un radio de borde de...*/
+	padding: 15px 40px; /*Le doy un padding*/
+	cursor: pointer; /*Le doy el efecto al pasar el cursor por encima para que se sepa que es un boton*/
+}
+footer .contacto .formulario .boton:hover { /*Le establezo la funcionalidad hover a mi boton para que cuando se pase el mouse por encima...*/
+	background: #387bea; /*Cambie el fondo de color cuanod se pase el mouse por encima*/
+}
+footer .contacto .formulario input[type="text"]:focus, /*Selecciono varios elementos, y le establezco la funcion focus (cuando se selecciona un campo de texto)*/
+footer .contacto .formulario input[type="email"]:focus,
+footer .contacto .formulario textarea:focus {
+	border: 2px solid #3895ea; /*Cambie el color del borde*/
+}
+
+/************* Iconos Redes Sociales ***********/
+footer .redes-sociales { /*Accedo a mis redes sociales*/
+	background: #1e2b38;
+	padding: 60px 0;
+}
+footer .redes-sociales .contenedor { /*Accedo a mi contenedor de las redes sociales*/
+	display: flex; /*Habilito la flexibilidad para  (Flexbox)*/
+	justify-content: center; /*Centro el contenido de mi contenedor*/
+}
+footer .redes-sociales a { /*Accedo a los enlaces de las redes sociales*/
+	color: #fff;
+	text-align: center; /*Alineo el texto en el centro*/
+	width: 100px;
+	display: block; /*Los vuelvo (block) para trabajarlos con flexbox*/
+	padding: 15px 0;
+	border-radius: 3px; /*Les doy un borde*/
+	font-size: 30px; /*Como los iconos son fuente los agrando con font-size*/
+	margin: 0 20px;
+}
+footer .redes-sociales .twitter:hover {background: #1da1f2;} /*Les agrego la clase hover, para cuando se pase el mouse por encima cambie al color*/
+footer .redes-sociales .facebook:hover {background: #1877f2;}
+footer .redes-sociales .youtube:hover {background: #ff0000;}
+footer .redes-sociales .github:hover {background: #666666;}
+footer .redes-sociales .instagram:hover {background: #3f729b;}
+
+/************** MEDIA QUERIES *************/
+@media screen and (max-width: 800px) { /*Lo que sucedera cuando llegue a 800px*/
+	header .menu {
+		text-align: center;
+	}
+	.main .trabajos .contenedor-trabajos .trabajo {
+		width: 46%;
+	}
+}
+@media screen and (max-width: 574px) {
+	header .contenedor-texto .texto .nombre {
+		font-size: 35px;
+	}
+	header .contenedor-texto .texto .profesion {
+		font-size: 18px;
+	}
+	footer .redes-sociales .contenedor {
+		flex-wrap: wrap;
+		padding: 20px;
+	}
+}
